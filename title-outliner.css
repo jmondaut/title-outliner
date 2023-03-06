@@ -1,0 +1,13 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+    background-color: black;
+}
+
+.main-container {
+    min-width: 640px;
+    min-height: fit-content;
+    margin-left: 5px;
+    color: white;
+}

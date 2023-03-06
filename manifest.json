@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Title outliner",
+    "version": "1.0.0",
+    "icons": {
+        "16": "icon16.png"
+    },
+    "background": {
+        "service_worker": "scripts/background-service-worker.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "scripts/content_script.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "title-outliner.html",
+        "default_title": "Title outliner"
+    },
+    "permissions": [
+        "tabs"
+    ]
+}
